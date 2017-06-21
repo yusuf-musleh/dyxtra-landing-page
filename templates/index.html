@@ -14,17 +14,29 @@
     <!-- <link href="static/css/style.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.css">
     <link rel="stylesheet" type="text/css" href="static/css/background.css">
+    <link rel="stylesheet" type="text/css" href="static/css/index.css">
 
   </head>
 
   <body>
-    <div id="main">
-      <canvas class='connecting-dots'></canvas>
+  <div class="ui large top menu index transition visible" style="display: flex !important;" id="navbar">
+    <div class="ui middle aligned container">
+      <a href="/"><img class="ui image" src="http://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png" style="height: 60px"></a>
+      <div class="right menu" id='right_menu'>
+          <a class="item navbar-btn ui" onclick="console.log('1')">features</a>
+          <a class="item navbar-btn ui" onclick="console.log('2')">how it works</a>
+          <a class="item navbar-btn ui" onclick="console.log('3')">pricing</a>
+      </div>
     </div>
+  </div>
+    <canvas class='connecting-dots'></canvas>
+
+
 
     <script type="text/javascript" src="static/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="static/js/background.js"></script>
     <script type="text/javascript" src="static/semantic/dist/semantic.js"></script>
+    <script type="text/javascript" src="static/js/index.js"></script>
   </body>
 
 </html>

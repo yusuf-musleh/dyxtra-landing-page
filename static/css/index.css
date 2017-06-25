@@ -3,6 +3,77 @@
 	background: transparent;
 }
 
+#navbar_sticky {
+	background: white;
+}
+
 #right_menu .item {
 	color: white;
+}
+
+#right_menu_sticky .item {
+	color: black;
+}
+
+#main_title {
+	text-align: center;
+	margin-top: 60px;
+}
+
+h1.ui.header {
+	font-size: 45px;
+	color: white;
+}
+
+h2.ui.header {
+	font-size: 18px;
+	color: white;
+}
+
+h4.sub.header {
+	color: lightsalmon;
+	margin-top: 0px;
+}
+
+@media screen and (min-width: 768px) {
+	#main_title {
+		margin-top: 150px;
+	}
+
+    h1.ui.header {
+		font-size: 72px;
+	}
+
+	h2.ui.header {
+		font-size: 25px;
+	}
+}
+
+#sub_title {
+	text-align: center;
+	font-size: 45px;
+	color: white;
+}
+
+
+#main_get_started_btn {
+	margin-top: 30px;
+}
+
+#features_div, #how_it_works_div {
+	padding-top: 445px;
+	text-align: center;
+}
+
+div.last.container {
+	width: 1400px;
+}
+
+p.copyright_text {
+	margin-top: 20px;
+	color: white;
+}
+
+div.ui.vertical.footer.segment {
+	margin-top: 500px
 }

@@ -15,28 +15,167 @@
     <link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.css">
     <link rel="stylesheet" type="text/css" href="static/css/background.css">
     <link rel="stylesheet" type="text/css" href="static/css/index.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> -->
 
   </head>
 
   <body>
-  <div class="ui large top menu index transition visible" style="display: flex !important;" id="navbar">
-    <div class="ui middle aligned container">
-      <a href="/"><img class="ui image" src="http://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png" style="height: 60px"></a>
-      <div class="right menu" id='right_menu'>
-          <a class="item navbar-btn ui" onclick="console.log('1')">features</a>
-          <a class="item navbar-btn ui" onclick="console.log('2')">how it works</a>
-          <a class="item navbar-btn ui" onclick="console.log('3')">pricing</a>
+    <div class="ui large top menu index transition visible" style="display: flex !important;" id="navbar">
+      <div class="ui middle aligned container">
+        <a href="/"><img class="ui image" src="http://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png" style="height: 60px"></a>
+        <div class="right menu" id="right_menu">
+            <a class="item navbar-btn ui" href="#features_div">features</a>
+            <a class="item navbar-btn ui" href="#how_it_works_div">how it works</a>
+            <a class="item navbar-btn ui" onclick="console.log('3')">pricing</a>
+        </div>
       </div>
     </div>
-  </div>
-    <canvas class='connecting-dots'></canvas>
 
+    <div class="ui large top menu index transition hidden fixed" style="display: flex !important;" id="navbar_sticky">
+      <div class="ui middle aligned container">
+        <a href="/"><img class="ui image" src="http://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png" style="height: 60px"></a>
+        <div class="right menu" id="right_menu_sticky">
+            <a class="item navbar-btn ui" href="#features_div">features</a>
+            <a class="item navbar-btn ui" href="#how_it_works_div">how it works</a>
+            <a class="item navbar-btn ui" onclick="console.log('3')">pricing</a>
+        </div>
+      </div>
+    </div>
 
+    <br>
+    <br>
+    <div class="ui grid middle aligned" id="main_title">
+      <div class="four wide column"></div>
+      <div class="eight wide column"><h1 class="ui header">dyxtra</h1></div>
+      <div class="four wide column"></div>
+    </div>
+    <br>
+    <br>
+    <div class="ui grid middle aligned" id="sub_title">
+      <div class="four wide column"></div>
+      <div class="eight wide column">
+        <h2 class="ui header">Provide real-time tracking your customers always wanted.
+        <br>
+        Let us solve the 'where is my <span id="element"></span>?'
+        <br>
+        problem your customers face, while you focus on running your business.</h2>
+        <button class="ui inverted right labeled icon large button" id="main_get_started_btn">
+          <i class="right arrow icon"></i>
+          Get Started
+        </button>
+      </div>
+      <div class="four wide column"></div>
+    </div>
+
+    <div id="features_div">
+      <h2 class="ui header">features</h2>
+      <br>
+      <br>
+      <div class="ui three column stackable grid">
+
+        <div class="column">
+          <h2 class="ui icon header">
+            <i class="location arrow icon"></i>
+            <div class="content">
+              Real Time Tracking
+            </div>
+          </h2>
+          <h4 class="sub header">We track based on the location of the driver's phone, display the location of your customer's food/ride/package on a map while updating and moving in real-time.</h4>
+        </div>
+
+        <div class="column">
+          <h2 class="ui icon header">
+            <i class="mobile icon"></i>
+            <div class="content">
+              No App? No Problem
+            </div>
+          </h2>
+          <h4 class="sub header">Think of us as Tracking-as-a-Service, whether you have an existing App you can easily integrate our tracking to it, or you can download our App and use it instead. No coding at all.</h4>
+        </div>
+
+        <div class="column">
+          <h2 class="ui icon header">
+            <!-- <i class="desktop icon"></i> -->
+            <!-- <i class="tablet icon"></i> -->
+            <i class="map outline icon"></i>
+            <div class="content">
+              Effortless Integration & Use
+            </div>
+          </h2>
+          <h4 class="sub header">Your business does not need expensive hardware or man power. Your customers do not need to install anything, they track their items on their phone, tablet or computer.</h4>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="how_it_works_div">
+      <h2 class="ui header">how it works</h2>
+      <br>
+      <br>
+
+      <div class="ui last container">
+        <div class="ui six column ordered steps">
+          <div class="step column">
+            <div class="content">
+              <div class="title">Sign-up</div>
+              <div class="description">Choose plan depending on your needs and register</div>
+            </div>
+          </div>
+          <div class="step column">
+            <div class="content">
+              <div class="title">Install</div>
+              <div class="description">Add our code to your app, or download our app</div>
+            </div>
+          </div>
+          <div class="step column">
+            <div class="content">
+              <div class="title">Log-in</div>
+              <div class="description">Log-in to our app on driver's phone</div>
+            </div>
+          </div>
+          <div class="step column">
+            <div class="content">
+              <div class="title">Add Trip Details</div>
+              <div class="description">Add trip details ie. trip purpose, destination, driver info, customer phone/email</div>
+            </div>
+          </div>
+          <div class="step column">
+            <div class="content">
+              <div class="title">Start Tracking</div>
+              <div class="description">A unique link will be generated and sent to customer to where they can click on and track location and details in real-time</div>
+            </div>
+          </div>
+          <div class="step column">
+            <div class="content">
+              <div class="title">Stop Tracking</div>
+              <div class="description">Once drivers arrives, you can stop tracking for this trip and begin another tracked trip</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <canvas class="connecting-dots"></canvas>
+
+    <div class="ui vertical footer segment">
+      <div class="ui container">
+          <div class="ui stackable inverted equal width equal height stackable grid">
+            <div class="two wide column">
+              <h4><a href="/"><img src="http://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png" style="height: 60px"></a></h4>
+            </div>
+
+            <div class="seven wide column floated">
+              <p class="copyright_text"> © 2017 dyxtra. All rights reserved.</p>
+            </div>
+        </div>
+      </div>
+    </div>
 
     <script type="text/javascript" src="static/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="static/js/background.js"></script>
     <script type="text/javascript" src="static/semantic/dist/semantic.js"></script>
     <script type="text/javascript" src="static/js/index.js"></script>
+    <script type="text/javascript" src="static/js/typed.js"></script>
   </body>
 
 </html>

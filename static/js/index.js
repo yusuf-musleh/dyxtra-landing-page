@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     // show sticky opaque menu when title passed
-    $('#main_title').visibility({
+    $('#navbar').visibility({
         once: false,
         onBottomPassed: function () {
             $('#navbar_sticky').transition('fade in');
@@ -13,13 +13,16 @@ $(document).ready(function () {
     });
 
     // anchors with animation
-	$('a').click(function(){
-		console.log($(this).attr('href'));
-		console.log($( $(this).attr('href') ).offset().top);
-	    $('html, body').animate({
-	        scrollTop: $( $(this).attr('href') ).offset().top + 200
-	    }, 500);
-	    return false;
+ 	$('a').click(function(){
+ 		if ($(this).attr('href') == "#how_it_works_div" && $(location).attr('href').indexOf("/pricing") != -1) {
+ 			$(location).attr('href', '/#how_it_works_div')
+ 		}
+ 		else if ($(this).attr('href').indexOf("/pricing") == -1) {
+		    $('html, body').animate({
+		        scrollTop: $( $(this).attr('href') ).offset().top + 200
+		    }, 500);
+		    return false;
+ 		}
 	});
 
 

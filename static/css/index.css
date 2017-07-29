@@ -1,10 +1,48 @@
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    // margin: 0 0 100px; /* bottom = footer height */
+    // padding: 25px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px
+}
+
+footer {
+ 	// position: fixed;
+ 	bottom: 0;
+    // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // height: 100px;
+    // width: 100%;
+    // overflow:hidden;
+}
+
+
 #navbar {
 	background: transparent;
 }
 
 #navbar_sticky {
 	background: white;
+}
+
+#left_menu .item {
+	color: white;
+	font-size: 22px;
+}
+
+#left_menu_sticky .item {
+	font-size: 22px;
+}
+
+#right_menu {
+	background: transparent;
 }
 
 #right_menu .item {
@@ -20,6 +58,11 @@
 	margin-top: 60px;
 }
 
+#typed_word_div {
+	display: inline-block;
+	width: 100px;
+}
+
 h1.ui.header {
 	font-size: 45px;
 	color: white;
@@ -30,10 +73,63 @@ h2.ui.header {
 	color: white;
 }
 
-h4.sub.header {
+h3.ui.header {
+	color: white;
+}
+
+h3.ui.header.instruction_step {
 	color: lightsalmon;
+}
+
+
+h3.ui.header.or_separator {
 	margin-top: 0px;
 }
+
+#main_get_started_btn {
+	margin-top: 30px;
+}
+
+#how_it_works_div {
+	padding-top: 445px;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#browser_and_plans_img {
+	width: 350px;
+}
+
+#download_app_img {
+	width: 250px;
+}
+
+#add_skd_img {
+	width: 370px;
+	margin-left: -20px;
+}
+
+#trip_info_image {
+	width: 350px;
+}
+
+#iphone_tracking_img {
+	width: 200px;
+}
+
+#imac_tracking_img {
+	width: 300px;
+}
+
+p.copyright_text {
+	margin-top: 20px;
+	color: white;
+}
+
+// div.ui.vertical.footer.segment {
+// 	margin-top: 500px
+// }
+
 
 @media screen and (min-width: 768px) {
 	#main_title {
@@ -47,33 +143,13 @@ h4.sub.header {
 	h2.ui.header {
 		font-size: 25px;
 	}
-}
 
-#sub_title {
-	text-align: center;
-	font-size: 45px;
-	color: white;
-}
+	h3.ui.header.or_separator {
+		margin-top: 150px;
+	}
 
+	#imac_tracking_img {
+		width: 400px;
+	}
 
-#main_get_started_btn {
-	margin-top: 30px;
-}
-
-#features_div, #how_it_works_div {
-	padding-top: 445px;
-	text-align: center;
-}
-
-div.last.container {
-	width: 1400px;
-}
-
-p.copyright_text {
-	margin-top: 20px;
-	color: white;
-}
-
-div.ui.vertical.footer.segment {
-	margin-top: 500px
 }

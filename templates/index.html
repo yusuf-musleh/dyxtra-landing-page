@@ -1,64 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "base.html" %}
+  {% block content %}
 
-    <title>dyxtra</title>
-
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="static/css/bootstrap.min.css" rel="stylesheet"> -->
-
-    <!-- Custom styles for this template -->
-    <!-- <link href="static/css/style.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="static/semantic/dist/semantic.css">
-    <link rel="stylesheet" type="text/css" href="static/css/background.css">
-    <link rel="stylesheet" type="text/css" href="static/css/index.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet"> -->
-
-  </head>
-
-  <body>
-    <div class="ui large top menu index transition visible" style="display: flex !important;" id="navbar">
-      <div class="ui middle aligned container">
-        <a href="/"><img class="ui image" src="http://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png" style="height: 60px"></a>
-        <div class="right menu" id="right_menu">
-            <a class="item navbar-btn ui" href="#features_div">features</a>
-            <a class="item navbar-btn ui" href="#how_it_works_div">how it works</a>
-            <a class="item navbar-btn ui" onclick="console.log('3')">pricing</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="ui large top menu index transition hidden fixed" style="display: flex !important;" id="navbar_sticky">
-      <div class="ui middle aligned container">
-        <a href="/"><img class="ui image" src="http://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png" style="height: 60px"></a>
-        <div class="right menu" id="right_menu_sticky">
-            <a class="item navbar-btn ui" href="#features_div">features</a>
-            <a class="item navbar-btn ui" href="#how_it_works_div">how it works</a>
-            <a class="item navbar-btn ui" onclick="console.log('3')">pricing</a>
-        </div>
-      </div>
-    </div>
-
-    <br>
-    <br>
     <div class="ui grid middle aligned" id="main_title">
       <div class="four wide column"></div>
-      <div class="eight wide column"><h1 class="ui header">dyxtra</h1></div>
-      <div class="four wide column"></div>
-    </div>
-    <br>
-    <br>
-    <div class="ui grid middle aligned" id="sub_title">
-      <div class="four wide column"></div>
       <div class="eight wide column">
-        <h2 class="ui header">Provide real-time tracking your customers always wanted.
-        <br>
-        Let us solve the 'where is my <span id="element"></span>?'
-        <br>
-        problem your customers face, while you focus on running your business.</h2>
+        <h2 class="ui header">
+          We solve your customers problem of not knowing where their
+          <div id="typed_word_div"><span id="element"></span></div>
+          is. By providing them with <u>real-time tracking</u> while you focus on running and growing your business.
+        </h2>
         <button class="ui inverted right labeled icon large button" id="main_get_started_btn">
           <i class="right arrow icon"></i>
           Get Started
@@ -67,115 +17,76 @@
       <div class="four wide column"></div>
     </div>
 
-    <div id="features_div">
-      <h2 class="ui header">features</h2>
-      <br>
-      <br>
-      <div class="ui three column stackable grid">
-
-        <div class="column">
-          <h2 class="ui icon header">
-            <i class="location arrow icon"></i>
-            <div class="content">
-              Real Time Tracking
-            </div>
-          </h2>
-          <h4 class="sub header">We track based on the location of the driver's phone, display the location of your customer's food/ride/package on a map while updating and moving in real-time.</h4>
-        </div>
-
-        <div class="column">
-          <h2 class="ui icon header">
-            <i class="mobile icon"></i>
-            <div class="content">
-              No App? No Problem
-            </div>
-          </h2>
-          <h4 class="sub header">Think of us as Tracking-as-a-Service, whether you have an existing App you can easily integrate our tracking to it, or you can download our App and use it instead. No coding at all.</h4>
-        </div>
-
-        <div class="column">
-          <h2 class="ui icon header">
-            <!-- <i class="desktop icon"></i> -->
-            <!-- <i class="tablet icon"></i> -->
-            <i class="map outline icon"></i>
-            <div class="content">
-              Effortless Integration & Use
-            </div>
-          </h2>
-          <h4 class="sub header">Your business does not need expensive hardware or man power. Your customers do not need to install anything, they track their items on their phone, tablet or computer.</h4>
-        </div>
-
-      </div>
-    </div>
-
     <div id="how_it_works_div">
       <h2 class="ui header">how it works</h2>
-      <br>
-      <br>
+      <h3 class="ui header">get Uber-like real-time tracking in 3 easy steps:</h3>
+      <div class="ui section divider"></div>
 
-      <div class="ui last container">
-        <div class="ui six column ordered steps">
-          <div class="step column">
-            <div class="content">
-              <div class="title">Sign-up</div>
-              <div class="description">Choose plan depending on your needs and register</div>
-            </div>
-          </div>
-          <div class="step column">
-            <div class="content">
-              <div class="title">Install</div>
-              <div class="description">Add our code to your app, or download our app</div>
-            </div>
-          </div>
-          <div class="step column">
-            <div class="content">
-              <div class="title">Log-in</div>
-              <div class="description">Log-in to our app on driver's phone</div>
-            </div>
-          </div>
-          <div class="step column">
-            <div class="content">
-              <div class="title">Add Trip Details</div>
-              <div class="description">Add trip details ie. trip purpose, destination, driver info, customer phone/email</div>
-            </div>
-          </div>
-          <div class="step column">
-            <div class="content">
-              <div class="title">Start Tracking</div>
-              <div class="description">A unique link will be generated and sent to customer to where they can click on and track location and details in real-time</div>
-            </div>
-          </div>
-          <div class="step column">
-            <div class="content">
-              <div class="title">Stop Tracking</div>
-              <div class="description">Once drivers arrives, you can stop tracking for this trip and begin another tracked trip</div>
-            </div>
-          </div>
+
+      <div class="ui equal width grid">
+        <div class="column">
+          <h2 class="ui header float left">Step 1</h2>
+          <h3 class="ui header instruction_step">Choose a plan that suits your needs and sign-up.</h3>
+          <img id='browser_and_plans_img' src="{{ url_for('static', filename='imgs/how_it_works/browser_and_plans.png') }}">
         </div>
       </div>
-    </div>
 
-    <canvas class="connecting-dots"></canvas>
+      <div class="ui equal width stackable grid">
+        <div class="column"></div>
+        <div class="column">
+          <h3 class="ui header instruction_step">Download our app and sign-in</h3>
+          <img id="download_app_img" src="{{ url_for('static', filename='imgs/how_it_works/app_download.png') }}">
+        </div>
+        <div class="column">
+          <h3 class="ui header or_separator">-- OR --</h3>
+        </div>
+        <div class="column">
+          <h3 class="ui header instruction_step">Add our code to your app and configure</h3>
+          <img id="add_skd_img" src="{{ url_for('static', filename='imgs/how_it_works/iphone_with_code_and_dyxtra_sdk.png') }}">
+        </div>
+        <div class="column"></div>
+      </div>
 
-    <div class="ui vertical footer segment">
-      <div class="ui container">
-          <div class="ui stackable inverted equal width equal height stackable grid">
-            <div class="two wide column">
-              <h4><a href="/"><img src="http://bizcentralusa.com/wp-content/uploads/2016/05/placeholder-sample-logo.png" style="height: 60px"></a></h4>
-            </div>
+      <div class="ui section hidden divider"></div>
 
-            <div class="seven wide column floated">
-              <p class="copyright_text"> © 2017 dyxtra. All rights reserved.</p>
-            </div>
+      <div class="ui equal width grid">
+        <div class="column">
+          <h2 class="ui header float left">Step 2</h2>
+          <h3 class="ui header instruction_step">Add delivery trip details; purpose, destination, driver info, customer contact info.</h3>
+          <img id="trip_info_image" src="{{ url_for('static', filename='imgs/how_it_works/add_trip_info_white.png') }}">
         </div>
       </div>
+
+      <div class="ui section hidden divider"></div>
+
+      <div class="ui equal width stackable grid">
+        <div class="column">
+          <h2 class="ui header float left">Step 3</h2>
+          <h3 class="ui header instruction_step">Start tracking!</h3>
+          <h3 class="ui header instruction_step">A unique link is generated and sent to customer where they can click on to open a map that tracks location and shows details in real-time, no download/installation required.</h3>
+        </div>
+      </div>
+
+      <div class="ui equal width stackable grid">
+        <dir class="column">
+        </dir>
+        <dir class="column">
+          <h3 class="ui header instruction_step">View it on their smart phones/tablets</h3>
+          <img id="iphone_tracking_img" src="{{ url_for('static', filename='imgs/how_it_works/iphone_with_tracking.png') }}">
+        </dir>
+        <dir class="column">
+          <h3 class="ui header or_separator">-- OR --</h3>
+        </dir>
+        <dir class="column">
+          <h3 class="ui header instruction_step">View it on their laptops/computers</h3>
+          <img id="imac_tracking_img" src="{{ url_for('static', filename='imgs/how_it_works/imac_with_tracking.png') }}">
+        </dir>
+        <dir class="column">
+        </dir>
+      </div>
+
+
+
+
     </div>
-
-    <script type="text/javascript" src="static/js/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="static/js/background.js"></script>
-    <script type="text/javascript" src="static/semantic/dist/semantic.js"></script>
-    <script type="text/javascript" src="static/js/index.js"></script>
-    <script type="text/javascript" src="static/js/typed.js"></script>
-  </body>
-
-</html>
+  {% endblock %}

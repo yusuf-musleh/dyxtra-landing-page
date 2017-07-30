@@ -11,3 +11,8 @@ def index():
 @app.route('/pricing', methods=['GET'])
 def pricing():
 	return render_template('pricing.html')
+
+
+@app.route('/register', methods=['GET'])
+def register():
+	return render_template('register.html')

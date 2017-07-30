@@ -17,7 +17,7 @@ $(document).ready(function () {
  		if ($(this).attr('href') == "#how_it_works_div" && $(location).attr('href').indexOf("/pricing") != -1) {
  			$(location).attr('href', '/#how_it_works_div')
  		}
- 		else if ($(this).attr('href').indexOf("/pricing") == -1) {
+ 		else if ($(this).attr('href').indexOf("/") == -1) {
 		    $('html, body').animate({
 		        scrollTop: $( $(this).attr('href') ).offset().top + 200
 		    }, 500);

@@ -126,10 +126,33 @@ p.copyright_text {
 	color: white;
 }
 
-// div.ui.vertical.footer.segment {
-// 	margin-top: 500px
-// }
+.plan_column {
+	text-align: center;
+}
 
+div.ui.attached, div.ui.attached.secondary {
+	background: transparent;
+	color: white;
+}
+
+div.ui.bottom.attached.button {
+	margin-left: -1px;
+    margin-right: -1px;
+}
+
+div.ui.top.attached.grey {
+	border-color: #767676;
+}
+
+div.ui.message.huge {
+	background: transparent;
+	border-style: dashed;
+	border-color: white;
+}
+
+div.ui.huge.message > p {
+	color: white;
+}
 
 @media screen and (min-width: 768px) {
 	#main_title {

@@ -148,9 +148,28 @@ div.ui.message.huge {
 	background: transparent;
 	border-style: dashed;
 	border-color: white;
+	width: 100%;
+    margin: 0 auto;
 }
 
 div.ui.huge.message > p {
+	color: white;
+}
+
+button.ui.button {
+	background: transparent;
+    border-style: solid;
+    border-color: white;
+    color: white;
+}
+
+.ui.form {
+	width: 250px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ui.bottom.grey.button > a {
 	color: white;
 }
 
@@ -173,6 +192,10 @@ div.ui.huge.message > p {
 
 	#imac_tracking_img {
 		width: 400px;
+	}
+
+	div.ui.message.huge {
+		width: 50%;
 	}
 
 }

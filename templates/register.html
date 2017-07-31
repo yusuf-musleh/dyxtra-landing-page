@@ -1,0 +1,36 @@
+  {% extends "base.html" %}
+    {% block content %}
+
+        <div>
+          <div id="register_div" class="ui huge message page">
+            <h2 class="ui header">hello! you caught us before we're ready.</h2>
+            <div class="ui divider"></div>
+            <p>we're working hard to put the final touches onto dyxtra. things are going well and it should be ready to help you with tracking very soon. if you'd like us to send you a reminder when we're ready just put your email below:</p>
+
+            <form class="ui form" method="POST" id="form_notify_id" action="{{ url_for('notify') }}">
+
+              <div id="error_div_id" class="ui negative hidden message">
+                <i class="close icon"></i>
+                <div class="header">
+                  Oops! Something went wrong.
+                </div>
+                <p>We could not add your email. Please try again.</p>
+              </div>
+
+
+              <div class="field">
+                <input type="text" name="name" placeholder="name" required>
+              </div>
+              <div class="field">
+                <input type="email" name="email" placeholder="email">
+              </div>
+              <button class="ui button" id="notify_submit_btn" type="submit">notify me »</button>
+              <div id='notify_loader_id' class="ui centered inline inverted loader"></div>
+            </form>
+
+          </div>
+        </div>
+
+      <div class="ui section divider hidden"></div>
+
+    {% endblock %}

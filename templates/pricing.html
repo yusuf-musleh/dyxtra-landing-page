@@ -24,7 +24,7 @@
                     </div>
                     <div class="ui bottom attached grey button btn-plan">
                         <i class="cart icon"></i>
-                        Select Plan
+                        <a href="{{ url_for('register', selected_plan='pay as you go') }}">Select Plan</a>
                     </div>
 
                 </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="ui bottom attached grey button btn-plan">
                         <i class="cart icon"></i>
-                        Select Plan
+                        <a href="{{ url_for('register', selected_plan='Small Businesses') }}">Select Plan</a>
                     </div>
 
                 </div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="ui bottom attached grey button btn-plan">
                         <i class="cart icon"></i>
-                        Select Plan
+                        <a href="{{ url_for('register', selected_plan='enterprise') }}">Select Plan</a>
                     </div>
 
                 </div>

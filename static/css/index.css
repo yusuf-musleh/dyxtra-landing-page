@@ -173,6 +173,21 @@ button.ui.button {
 	color: white;
 }
 
+img.ui.image{
+	margin-top: 12px;
+	margin-left: 10px;
+	height: 60px;
+}
+
+#sticky_logo {
+	height: 50px;
+	margin-top: 15px;
+}
+
+h4 > a > img {
+	height: 60px;
+}
+
 @media screen and (min-width: 768px) {
 	#main_title {
 		margin-top: 150px;
@@ -196,6 +211,17 @@ button.ui.button {
 
 	div.ui.message.huge {
 		width: 50%;
+	}
+
+	img.ui.image {
+		height: 60px;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#sticky_logo {
+		height: 50px;
+		margin-top: 6px;
 	}
 
 }

@@ -4,6 +4,8 @@ import os
 from flask import Flask, render_template, request, session
 from flask_mail import Mail
 
+from werkzeug.contrib.fixers import ProxyFix
+
 from helpers import send_email
 
 app = Flask(__name__)
@@ -20,6 +22,7 @@ app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 mail = Mail(app)
 
+app.wsgi_app = ProxyFix(app.wsgi_app)
 
 @app.route('/', methods=['GET'])
 def index():
@@ -34,7 +37,6 @@ def pricing():
 @app.route('/register', methods=['GET'])
 def register():
 	selected_plan = request.args.get('selected_plan')
-	print ("SELECTED_PLAN", selected_plan)
 	session['selected_plan'] = selected_plan
 	return render_template('register.html')
 

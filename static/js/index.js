@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+	// tracking link clicks
+	mixpanel.track_links(".mixpanel-tracked-link", "Link clicked", function(ele) {
+    	return { type: $(ele).attr('href') }
+	});
+
     // show sticky opaque menu when title passed
     $('#navbar').visibility({
         once: false,
@@ -14,7 +19,7 @@ $(document).ready(function () {
 
     // anchors with animation
  	$('a').click(function(){
- 		if ($(this).attr('href') == "#how_it_works_div" && ($(location).attr('href').indexOf("/pricing") != -1) || $(location).attr('href').indexOf('/register')) {
+ 		if ($(this).attr('href') == "#how_it_works_div" && (($(location).attr('href').indexOf("/pricing") != -1) || $(location).attr('href').indexOf('/register') != -1) ) {
  			$(location).attr('href', '/#how_it_works_div')
  		}
  		else if ($(this).attr('href').indexOf("/") == -1) {

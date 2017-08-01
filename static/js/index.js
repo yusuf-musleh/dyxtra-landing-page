@@ -10,8 +10,12 @@ $(document).ready(function () {
         once: false,
         onBottomPassed: function () {
             $('#navbar_sticky').transition('fade in');
+        	$('#navbar').removeClass('visible');
+        	$('#navbar').addClass('hidden');
         },
         onBottomPassedReverse: function () {
+        	$('#navbar').removeClass('hidden');
+        	$('#navbar').addClass('visible');
             $('#navbar_sticky').transition('fade out');
 
         }

@@ -108,7 +108,9 @@ var canvasDots = function() {
 };
 
 window.onload = function() {
-    canvasDots();
+    if ($( window ).width() > 768){
+        canvasDots();
+    }
 };
 
 function resetCanvas() {

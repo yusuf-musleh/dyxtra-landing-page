@@ -84,6 +84,7 @@ h3.ui.header.instruction_step {
 
 h3.ui.header.or_separator {
 	margin-top: 0px;
+	font-size: 25px;
 }
 
 #main_get_started_btn {
@@ -188,6 +189,10 @@ h4 > a > img {
 	height: 60px;
 }
 
+.right.stackable.menu.ui {
+	border-color: transparent;
+}
+
 @media screen and (min-width: 768px) {
 	#main_title {
 		margin-top: 150px;
@@ -203,6 +208,7 @@ h4 > a > img {
 
 	h3.ui.header.or_separator {
 		margin-top: 150px;
+		font-size: 25px;
 	}
 
 	#imac_tracking_img {

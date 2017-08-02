@@ -21,18 +21,6 @@ $(document).ready(function () {
         }
     });
 
-    // anchors with animation
- 	$('a').click(function(){
- 		if ($(this).attr('href') == "#how_it_works_div" && (($(location).attr('href').indexOf("/pricing") != -1) || $(location).attr('href').indexOf('/register') != -1) ) {
- 			$(location).attr('href', '/#how_it_works_div')
- 		}
- 		else if ($(this).attr('href').indexOf("/") == -1) {
-		    $('html, body').animate({
-		        scrollTop: $( $(this).attr('href') ).offset().top + 200
-		    }, 500);
-		    return false;
- 		}
-	});
 
 	$('.message .close').on('click', function() {
 	    $(this)

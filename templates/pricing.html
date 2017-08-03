@@ -8,7 +8,7 @@
         <div class="ui three columns stackable grid">
             <div class="column plan_column">
                 <div class="ui segments plan">
-                    <div class="ui top attached segment grey inverted plan-title">
+                    <div class="ui top attached segment plan-title">
                         <span class="ui header">Pay as you go</span>
                     </div>
                     <div class="ui attached segment feature">
@@ -22,16 +22,18 @@
                       <i class="icon check"></i>
                       Only pay for what you use
                     </div>
-                    <div class="ui bottom attached grey button btn-plan">
-                        <i class="cart icon"></i>
-                        <a href="{{ url_for('register', selected_plan='pay as you go') }}">Select Plan</a>
-                    </div>
+                    <a href="{{ url_for('register', selected_plan='pay as you go') }}">
+                      <div class="ui bottom attached button btn-plan">
+                          <i class="cart icon"></i>
+                          Select Plan
+                      </div>
+                    </a>
 
                 </div>
             </div>
           <div class="column plan_column">
                 <div class="ui segments plan principal">
-                    <div class="ui top attached segment grey inverted plan-title">
+                    <div class="ui top attached segment plan-title">
                         <span class="ui header">Small Businesses</span>
                     </div>
                     <div class="ui attached segment feature">
@@ -45,16 +47,18 @@
                       <i class="icon check"></i>
                       Up to 45 trips tracked per month
                     </div>
-                    <div class="ui bottom attached grey button btn-plan">
-                        <i class="cart icon"></i>
-                        <a href="{{ url_for('register', selected_plan='Small Businesses') }}">Select Plan</a>
-                    </div>
+                    <a href="{{ url_for('register', selected_plan='Small Businesses') }}">
+                      <div class="ui bottom attached button btn-plan">
+                          <i class="cart icon"></i>
+                          Select Plan
+                      </div>
+                    </a>
 
                 </div>
             </div>
           <div class="column plan_column">
                 <div class="ui segments plan">
-                    <div class="ui top attached segment grey inverted plan-title">
+                    <div class="ui top attached segment plan-title">
                         <span class="ui header">Enterprise</span>
                     </div>
                     <div class="ui attached segment feature">
@@ -69,10 +73,12 @@
                       <i class="icon check"></i>
                       Special integration support
                     </div>
-                    <div class="ui bottom attached grey button btn-plan">
-                        <i class="cart icon"></i>
-                        <a href="{{ url_for('register', selected_plan='enterprise') }}">Select Plan</a>
-                    </div>
+                    <a href="{{ url_for('register', selected_plan='enterprise') }}">
+                      <div class="ui bottom attached button btn-plan">
+                          <i class="cart icon"></i>
+                          Select Plan
+                      </div>
+                    </a>
 
                 </div>
             </div>

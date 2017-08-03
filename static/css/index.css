@@ -141,9 +141,16 @@ div.ui.bottom.attached.button {
     margin-right: -1px;
 }
 
-div.ui.top.attached.grey {
-	border-color: #767676;
+div.ui.top.attached {
+	background-color: white;
+	color: black;
 }
+
+div.ui.bottom.attached.ui.button.btn-plan {
+	background-color: white;
+	color: black;
+}
+
 
 div.ui.message.huge {
 	background: transparent;

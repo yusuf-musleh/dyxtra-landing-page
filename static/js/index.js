@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+	// run to format code snippets
+	PR.prettyPrint()
+
 	// tracking link clicks
 	mixpanel.track_links(".mixpanel-tracked-link", "Link clicked", function(ele) {
     	return { type: $(ele).attr('href') }

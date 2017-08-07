@@ -78,7 +78,7 @@ h3.ui.header {
 }
 
 h3.ui.header.instruction_step {
-	color: lightsalmon;
+	color: white;
 }
 
 
@@ -198,6 +198,10 @@ h4 > a > img {
 
 .right.stackable.menu.ui {
 	border-color: transparent;
+}
+
+.code_snippet {
+	text-align: left;
 }
 
 @media screen and (min-width: 768px) {

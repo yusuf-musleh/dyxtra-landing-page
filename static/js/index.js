@@ -8,6 +8,13 @@ $(document).ready(function () {
     	return { type: $(ele).attr('href') }
 	});
 
+	// tab functionality
+	$('#code_or_no_code .menu .item')
+	  .tab({
+	    context: $('#code_or_no_code')
+	  })
+	;
+
     // show sticky opaque menu when title passed
     $('#navbar').visibility({
         once: false,

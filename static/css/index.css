@@ -106,16 +106,17 @@ h3.ui.header.or_separator {
 }
 
 #add_skd_img {
-	width: 370px;
+	width: 100%;
+	max-width: 370px;
 	margin-left: -20px;
 }
 
 #trip_info_image {
-	width: 350px;
+	width: 250px;
 }
 
 #iphone_tracking_img {
-	width: 200px;
+	width: 100px;
 }
 
 #imac_tracking_img {
@@ -204,6 +205,49 @@ h4 > a > img {
 	text-align: left;
 }
 
+#code_or_no_code{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.ui.secondary.pointing.menu .active.item, .ui.secondary.pointing.menu .active.item:hover {
+	border-bottom-color: white;
+}
+
+.ui.secondary.pointing.menu .item:hover {
+	font-weight: bold;
+}
+
+
+#code_or_no_code .ui.pointing.secondary.menu > a {
+	color: white;
+	font-size: 18px;
+}
+
+.ui.attached.tabular.menu {
+	background: transparent;
+}
+
+#code_snippets_tabs .item {
+	color: white;
+}
+
+#android_tab {
+	width: 118px;
+}
+
+#ios1_tab {
+	width: 106px;
+}
+
+#ios2_tab {
+	width: 127px;
+}
+
+#code_snippets_tabs .item.active {
+	color: black;
+}
+
 @media screen and (min-width: 768px) {
 	#main_title {
 		margin-top: 150px;
@@ -223,7 +267,7 @@ h4 > a > img {
 	}
 
 	#imac_tracking_img {
-		width: 400px;
+		width: 300px;
 	}
 
 	div.ui.message.huge {
@@ -239,6 +283,11 @@ h4 > a > img {
 	#sticky_logo {
 		height: 50px;
 		margin-top: 6px;
+	}
+
+	#code_or_no_code{
+		width: 60%;
+		margin: 0 auto;
 	}
 
 }

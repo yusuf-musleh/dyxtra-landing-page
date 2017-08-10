@@ -5,9 +5,9 @@
       <div class="four wide column"></div>
       <div class="eight wide column">
         <h2 class="ui header">
-          dyxtra provides your customers with uber-like real-time tracking for their
+          dyxtra provides <u>uber-like real-time</u> tracking to your local customers for their
           <div id="typed_word_div"><span id="element"></span></div>
-          they are expecting from you while you focus on running your business
+          while you focus on running your business
         </h2>
         <button onclick="window.location='{{ url_for('pricing') }}';" class="ui inverted right labeled icon large button" id="main_get_started_btn">
           <i class="right arrow icon"></i>
@@ -32,20 +32,20 @@
 
       <div class="ui section hidden divider"></div>
       <h2 class="ui header float left">Step 2</h2>
-      <h3 class="ui header instruction_step">which one of the following best describes you and your business:</h3>
+      <h3 class="ui header instruction_step">select one of the following that best describes you and your business:</h3>
 
       <div id="code_or_no_code">
         <div class="ui pointing secondary stackable two item menu">
-          <a class="item" data-tab="first">don't have an app for your drivers and not a fan of coding?</a>
-          <a class="item" data-tab="second">already have an app your drivers use?</a>
+          <a class="active item" data-tab="first">don't have an app for your drivers or programming expertise?</a>
+          <a class="item" data-tab="second">already have an app your drivers use or know how to code?</a>
         </div>
-        <div class="ui tab" data-tab="first">
+        <div class="ui active tab" data-tab="first">
           <div class="ui section hidden divider"></div>
           <div class="ui equal width grid">
             <div class="column">
-              <h3 class="ui header instruction_step">download our app for your drivers and sign-in</h3>
+              <h3 class="ui header instruction_step">download our app for each driver and sign-in</h3>
               <img id="download_app_img" src="{{ url_for('static', filename='imgs/how_it_works/app_download.png') }}">
-              <h3 class="ui header instruction_step">add new trip details, destination, customer contact information</h3>
+              <h3 class="ui header instruction_step">add new trip details, destination, customer contact information in the app</h3>
               <img id="trip_info_image" src="{{ url_for('static', filename='imgs/how_it_works/add_trip_info_white.png') }}">
             </div>
           </div>
@@ -73,7 +73,7 @@
 dyxtra.initialize(this.getApplicationContext(), “YOUR_KEY”);
 
 // create a new trip you would like to track
-int trip = dyxtra.create_trip(DRIVER_ID, CUSTOMERS_EMAILS)
+String trip = dyxtra.create_trip(DRIVER_ID, LONGITUDE, LATITUDE, CUSTOMERS_EMAILS)
 
 // start tracking!
 dyxtra.start_tracking(trip)
@@ -91,7 +91,7 @@ dyxtra.stop_tracking(trip)
 dyxtra.initialize("YOUR_KEY")
 
 // create a new trip you would like to track
-var trip = dyxtra.create_trip(DRIVER_ID, CUSTOMERS_EMAILS)
+var trip = dyxtra.create_trip(DRIVER_ID, LONGITUDE, LATITUDE, CUSTOMERS_EMAILS)
 
 // start tracking!
 dyxtra.start_tracking(trip)
@@ -109,7 +109,7 @@ dyxtra.stop_tracking(trip)
 [dyxtra initialize:@"YOUR_KEY"];
 
 // create a new trip you would like to track
-int trip = [dyxtra create_trip: DRIVER_ID, CUSTOMERS_EMAILS];
+NSString *trip = [dyxtra create_trip: DRIVER_ID, LONGITUDE, LATITUDE, CUSTOMERS_EMAILS];
 
 // start tracking!
 [dyxtra start_tracking:trip];
@@ -128,8 +128,8 @@ int trip = [dyxtra create_trip: DRIVER_ID, CUSTOMERS_EMAILS];
       <div class="ui equal width stackable grid">
         <div class="column">
           <h2 class="ui header float left">Step 3</h2>
-          <h3 class="ui header instruction_step">Start tracking!</h3>
-          <h3 class="ui header instruction_step">A unique link is sent to your customers that will take them to a map that tracks the location of their order in real-time with no sign-up/download/installation</h3>
+          <h3 class="ui header instruction_step">start tracking!</h3>
+          <h3 class="ui header instruction_step">a unique link is sent to your customers that will take them to a map that shows the location of their order in real-time with no sign-up/download/installation</h3>
         </div>
       </div>
 
@@ -139,14 +139,14 @@ int trip = [dyxtra create_trip: DRIVER_ID, CUSTOMERS_EMAILS];
         <dir class="column">
         </dir>
         <dir class="column">
-          <h3 class="ui header instruction_step">View it on their smart phones/tablets</h3>
+          <h3 class="ui header instruction_step">view it on their smart phones/tablets</h3>
           <img id="iphone_tracking_img" src="{{ url_for('static', filename='imgs/how_it_works/iphone_with_tracking.png') }}">
         </dir>
         <dir class="column">
           <h3 class="ui header or_separator">-- OR --</h3>
         </dir>
         <dir class="column">
-          <h3 class="ui header instruction_step">View it on their laptops/computers</h3>
+          <h3 class="ui header instruction_step">view it on their laptops/computers</h3>
           <img id="imac_tracking_img" src="{{ url_for('static', filename='imgs/how_it_works/imac_with_tracking.png') }}">
         </dir>
         <dir class="column">

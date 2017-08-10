@@ -211,7 +211,8 @@ h4 > a > img {
 }
 
 .ui.secondary.pointing.menu .active.item, .ui.secondary.pointing.menu .active.item:hover {
-	border-bottom-color: white;
+	border-style: solid;
+	border-color: white;
 }
 
 .ui.secondary.pointing.menu .item:hover {
@@ -222,6 +223,8 @@ h4 > a > img {
 #code_or_no_code .ui.pointing.secondary.menu > a {
 	color: white;
 	font-size: 18px;
+	border-bottom-color: white;
+	background: rgba(0, 0, 0, 0.17);
 }
 
 .ui.attached.tabular.menu {

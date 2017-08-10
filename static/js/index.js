@@ -5,6 +5,7 @@ $(document).ready(function () {
 
 	// tracking link clicks
 	mixpanel.track_links(".mixpanel-tracked-link", "Link clicked", function(ele) {
+		mixpanel.track($(ele).attr('href'));
     	return { type: $(ele).attr('href') }
 	});
 

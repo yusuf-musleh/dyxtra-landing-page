@@ -213,7 +213,6 @@ h4 > a > img {
 .ui.secondary.pointing.menu .active.item, .ui.secondary.pointing.menu .active.item:hover {
 	border-style: solid;
 	border-color: white;
-
 }
 
 .ui.secondary.pointing.menu .item:hover {

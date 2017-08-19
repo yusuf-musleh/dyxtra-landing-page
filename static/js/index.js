@@ -72,7 +72,7 @@ $(document).ready(function () {
 // animate typing in title
 $(function(){
 	$("#element").typed({
-		strings: ["food", "ride", "package"],
+		strings: ["food", "ride", "order"],
 		typeSpeed: 55,
 		loop: null,
 		showCursor: true

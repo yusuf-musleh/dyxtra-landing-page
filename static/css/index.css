@@ -188,14 +188,14 @@ button.ui.button {
 }
 
 img.ui.image{
-	margin-top: 12px;
+	margin-top: 30px;
 	margin-left: 10px;
 	height: 60px;
 }
 
 #sticky_logo {
 	height: 50px;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 h4 > a > img {

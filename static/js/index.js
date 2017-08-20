@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+	// push down other content to not show on page with main title
+	$("#why_dyxtra").css("margin-top", window.innerHeight + 'px')
+
 	// run to format code snippets
 	PR.prettyPrint()
 

@@ -81,3 +81,10 @@ $(function(){
 		showCursor: true
 	});
 });
+
+function get_started(url) {
+	mixpanel.track('Get Started', {
+		'url' : url
+	});
+	window.location=url;
+}

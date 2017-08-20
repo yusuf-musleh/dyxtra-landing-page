@@ -1,6 +1,11 @@
 {% extends "base.html" %}
   {% block content %}
-
+    <script type="text/javascript">
+      mixpanel.track('Main Page', {
+          'page name' : document.title,
+          'url' : window.location.pathname
+      });
+    </script>
     <div class="ui grid middle aligned" id="main_title">
       <div class="four wide column"></div>
       <div class="eight wide column">
@@ -9,7 +14,7 @@
           <div id="typed_word_div"><span id="element"></span></div>
           while you focus on running your business
         </h2>
-        <button onclick="window.location='{{ url_for('pricing') }}';" class="ui inverted right labeled icon large button" id="main_get_started_btn">
+        <button onclick="get_started('{{ url_for('pricing') }}')" class="ui inverted right labeled icon large button" id="main_get_started_btn">
           <i class="right arrow icon"></i>
           Get Started
         </button>

@@ -91,13 +91,15 @@ h3.ui.header.or_separator {
 	margin-top: 30px;
 }
 
-#how_it_works_div {
-	padding-top: 445px;
+#how_it_works {
+	padding-top: 135px;
 	text-align: center;
 	padding-bottom: 100px;
 }
 
-#why_dyxtra_div {
+#why_dyxtra {
+	margin-top: 100vh;
+	padding-top: 135px;
 	text-align: center;
 	padding-bottom: 100px;
 }
@@ -129,7 +131,10 @@ h3.ui.header.or_separator {
 }
 
 p.copyright_text {
-	margin-top: 20px;
+	color: white;
+}
+
+p.email_text, p.email_text > a {
 	color: white;
 }
 

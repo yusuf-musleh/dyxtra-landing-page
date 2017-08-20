@@ -1,6 +1,11 @@
   {% extends "base.html" %}
     {% block content %}
-
+    <script type="text/javascript">
+      mixpanel.track('Pricing Page', {
+          'page name' : document.title,
+          'url' : window.location.pathname
+      });
+    </script>
     <div id="plans_and_pricing_div">
       <h2 class="ui centered header">choose a plan that fits your needs and budget:</h2>
       <div class="ui section divider"></div>

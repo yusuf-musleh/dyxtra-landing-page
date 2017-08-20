@@ -1,6 +1,11 @@
   {% extends "base.html" %}
     {% block content %}
-
+        <script type="text/javascript">
+          mixpanel.track('Register Page', {
+            'page name' : document.title,
+            'url' : window.location.pathname
+          });
+        </script>
         <div>
           <div id="register_div" class="ui huge message page">
             <h2 class="ui header">hello! you caught us before we're ready.</h2>
